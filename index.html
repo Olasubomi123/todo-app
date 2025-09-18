@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="bootstrap.min.css">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="todoapp">
+
+    <div class="todo">
+
+      <div class="text-light todoheader">
+        <div>
+          <h2>TODO</h2>
+        </div>
+        <div class="mode">
+          <button class="btn btn--theme" id="theme-toggle">
+          <img src="images/icon-moon.svg" alt="moon"  class="todo_elem--hide">
+          <img src="images/icon-sun.svg" alt="sun">
+          </button>
+        </div>
+      </div>
+      
+      <div class="body">
+
+        <div class="creatingAtodo d-flex">
+          <div class="todo_circle"></div>
+          <input type="text" placeholder="create a new todo" id="todo-input">
+        </div>
+
+
+
+        <div class="todobody">
+          <ul class="todo_list" id="todo-list">
+            <!-- <li class="todo_elem">
+
+              <input type="checkbox" id="1">
+              <label for="1" class="custom-checkbox">
+                <img src="./images/icon-check.svg" alt="check">
+              </label>
+              <label for="1" class="todo-text">ejjeje</label>
+              <button class="btn todo_delete"><img src="./images/icon-cross.svg" alt="check"></button>
+              
+            </li> -->
+
+             
+          </ul>
+        </div>
+
+
+         <div class="todo__filters">
+                  <div class="todo__filters__sides">
+                     <p class="btn"><span id="items-left"></span>item(s) left</p>
+                     <button class="btn btn--clear" id="clear-completed">Clear Completed</button>
+                  </div>
+                  <div class="todo__filters__center">
+                     
+                        <input type="radio" name="filter" id="all" value="all" class="btn btn--bold" checked>
+                        <label  class="btn btn--bold" for="all">All</label>
+                     
+                        <input type="radio" name="filter" id="active" value="active" class="btn btn--bold">
+                        <label class="btn btn--bold" for="active">Active</label>
+                     
+                        <input type="radio" name="filter" id="completed" value="completed" class="btn btn--bold">
+                        <label class="btn btn--bold" for="completed">Completed</label>
+               </div>
+          </div>
+      </div>
+     
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+<!-- 
+  Todo -->
+
+  <!-- Add dynamic number items left -->
+
+  <!-- All
+  Active 
+  Completed
+
+  Clear Completed
+
+  Drag and drop to reorder list
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+                <!-- <button class="btn todo_check"><img src="./images/icon-check.svg" alt="check"></button>
+              <p>content</p>
+              <button class="btn todo_delete"><img src="./images/icon-cross.svg" alt="check"></button> -->
+</body>
+<script src="script.js"></script>
+</html>
