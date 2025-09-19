@@ -12,7 +12,7 @@ body,html{
 }
 
 .todoapp{
-    background-image: url(./images/bg-desktop-dark.jpg);
+    background-image: url(bg-desktop-dark.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: top;
@@ -255,7 +255,7 @@ label{
 
 [data-theme="darkTheme"] .todoapp {
    background-color: white;
-   background: url("./images/bg-desktop-light.jpg");
+   background: url("bg-desktop-light.jpg");
     background-repeat: no-repeat;
    background-size: contain;
    color: black;
@@ -285,3 +285,4 @@ label{
 [data-theme="darkTheme"] #todo-input{
    color: black;
 }
+
