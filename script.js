@@ -93,11 +93,11 @@ function addTodoElem(todoText, isNew = true, storedTodo = null) {
    todoEl.innerHTML = `                                            
       <input type="checkbox" id="check-${currentId}" ${storedTodo && !storedTodo.active ? "checked" : ""}>
       <label for="check-${currentId}" class="custom-checkbox todo_check">
-         <img src="./images/icon-check.svg" alt="check">
+         <img src="icon-check.svg" alt="check">
       </label>
       <label for="check-${currentId}" class="todo-text">${todoText}</label>
       <button class="btn todo_delete">
-         <img src="./images/icon-cross.svg" alt="delete">
+         <img src="icon-cross.svg" alt="delete">
       </button>
    `;
 
@@ -198,5 +198,6 @@ function init() {
       getLocalStorage();
    }
 }
+
 
 init();
